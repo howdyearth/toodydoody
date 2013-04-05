@@ -1,0 +1,166 @@
+/*
+colors:
+#c1272d
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #1A1A1A;
+  background-color: whiteSmoke;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #0088cc;
+  cursor: default;
+}
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 18px; }
+
+b {
+  font-weight: 600;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.center-block {
+  margin: 30px auto 50px;
+  width: 900px;
+}
+
+/* top nav */
+.days-menu {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+.days-menu a {
+  text-decoration: none;
+  color: #DEDEDE;
+  padding-bottom: 5px;
+}
+.days-menu a:hover {
+  border-bottom: 2px solid #DEDEDE;
+}
+.days-menu a:active, .days-menu .list-active {
+  color: #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
+}
+.days-menu ul {
+  list-style: none;
+  float: right;
+}
+.days-menu > ul > li {
+  display: inline-block;
+}
+.days-menu > ul > li+li {
+  margin-left: 60px;
+}
+
+/* To-do list */
+
+.todo-lists ul > li, .add-todo-box {
+  /*border-left: 50px solid #ccc;*/
+  background-color: #ebebeb;
+  box-shadow: 8px 8px 0 0px #b7b7b7;
+  font-size: 18px;
+  padding: 0px;
+  height: 45px;
+  position: relative;
+}
+.todo-lists ul > li:hover, .todo-lists .td-opened, .add-todo {
+  background-color: #f2f2f2;
+}
+.todo-lists ul > li+li {
+  margin-top: 20px;
+}
+.todo-lists p {
+  font-weight: 300; padding: 10px; margin: 0;
+  /*word-wrap: break-word;*/
+  left: 50px;
+  position: absolute;
+}
+.todo-lists .td-done {
+  border-left: 50px solid #0bda51;
+  text-decoration: line-through;
+}
+
+.todo-list { display: none; }
+.active { display: block; }
+
+
+/* Span buttons */
+
+.td-unfin, .td-fin, .td-add {
+  height: 45px;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: inline;
+  cursor: pointer;
+}
+.td-unfin { background-color: #ccc; }
+.td-fin { background-color: #0bda51; }
+
+.td-add {
+  background-color: #ccc;
+  line-height: 45px;
+  text-align: center;
+}
+.td-add:active {
+  background-color: #ebebeb;
+}
+
+.td-delete {
+  margin: 10px;
+  cursor: pointer;
+  display: none;
+  float: right;
+  color: #B7B7B7;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h1, .td-unfin, .td-fin, .td-add, .td-delete {
+  -webkit-user-select: none;
+}
+
+/* Input form */
+
+.add-todo-box {
+  margin: 40px 0 0 0; padding:0;
+}
+.add-todo {
+  position: absolute;
+  left: 50px;
+  width: 824px;
+  margin: 0;
+  border: none;
+  padding: 13px;
+  color: #666;
+  font-size: 16px;
+}
+.add-todo:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+
+/*
+.todo-lists .td-opened {
+  border-left: 50px solid #0088cc;
+}
+.td-opened p {
+  display: block;
+}
+*/
