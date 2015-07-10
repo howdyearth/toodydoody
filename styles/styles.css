@@ -100,7 +100,7 @@ ul {
 
 /* Span buttons */
 
-.td-unfin, .td-fin, .td-add {
+.td-unfin, .td-fin, .td-soonfin, .td-add {
   height: 45px;
   width: 50px;
   padding: 0;
@@ -110,6 +110,7 @@ ul {
   cursor: pointer;
 }
 .td-unfin { background-color: #ccc; }
+.td-soonfin { background-color: #ffeb3b; }
 .td-fin { background-color: #0bda51; }
 
 .td-add {

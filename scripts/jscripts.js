@@ -89,10 +89,13 @@ $('.td-delete').live('click', function() {
 
 $('span[class*=fin]').live('click', function() {
 	var taskStatus = $(this);
-	if( taskStatus.attr("class") == 'td-unfin')
-		taskStatus.removeClass('td-unfin').addClass('td-fin');
-	else
-		$(this).removeClass('td-fin').addClass('td-unfin');
+    var statusClass = taskStatus.attr('class');
+	if (statusClass == 'td-unfin')
+		taskStatus.removeClass('td-unfin').addClass('td-soonfin');
+	else if (statusClass == 'td-soonfin')
+		taskStatus.removeClass('td-soonfin').addClass('td-fin');
+    else if (statusClass == 'td-fin')
+        taskStatus.removeClass('td-fin').addClass('td-unfin');
 });
 
 // to do submenu
