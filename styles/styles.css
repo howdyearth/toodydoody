@@ -85,9 +85,12 @@ ul {
 }
 .todo-lists p {
   font-weight: 300; padding: 10px; margin: 0;
-  /*word-wrap: break-word;*/
   left: 50px;
   position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 810px;
 }
 .todo-lists .td-done {
   border-left: 50px solid #0bda51;
