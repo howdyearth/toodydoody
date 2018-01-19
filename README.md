@@ -1,4 +1,4 @@
 # ToodyDoody
 ###### Simple to-do web application
 
-Available here: [ToodyDoody](https://howdyworld.github.io/toodydoody/)
+Try to test live version: [ToodyDoody](https://howdyearth.github.io/toodydoody/)
